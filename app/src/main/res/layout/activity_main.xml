@@ -11,8 +11,87 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:contentDescription="logo"
+        android:contentDescription="@string/logo"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/home" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/subheader"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageButton
+        android:id="@+id/scheduleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="280dp"
+        android:contentDescription="@string/schedule"
+        app:layout_constraintEnd_toStartOf="@+id/emailButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_event_available_black_48dp" />
+
+    <ImageButton
+        android:id="@+id/emailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:contentDescription="@string/email_us"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_contact_mail_black_48dp" />
+
+    <ImageButton
+        android:id="@+id/callButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="280dp"
+        android:contentDescription="@string/call_us"
+        app:layout_constraintStart_toEndOf="@+id/emailButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_contact_phone_black_48dp" />
+
+    <TextView
+        android:id="@+id/scheduleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/schedule"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/scheduleButton"
+        app:layout_constraintTop_toTopOf="@+id/scheduleButton" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/email_us"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/emailButton"
+        app:layout_constraintTop_toTopOf="@+id/emailButton" />
+
+    <TextView
+        android:id="@+id/callTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/call_us"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/callButton"
+        app:layout_constraintTop_toTopOf="@+id/callButton" />
 
 </android.support.constraint.ConstraintLayout>
